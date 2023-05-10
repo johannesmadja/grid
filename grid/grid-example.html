@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #1d33c5;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; */
+        }
+
+        .container {
+            max-width: 1300px;
+            margin-inline: auto;
+        }
+
+        .div-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 110px;
+            
+            gap: 1rem;
+        }
+        
+        /* ********************************************************
+        LES ITEMS DE LA GRILLE
+        ******************************************************** */
+        .div-grid div {
+            color: #1d33c5;
+            background-color: #fff;
+            font-family: sans-serif;
+        }
+
+        /* Mansory I */
+        .div-masonryI {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        /* Overlap */
+        .div-overlap {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        .div-ExplicitlyPlaced {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .div-MasonryII {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .div-NamedTracks {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header container">
+        <h1>CSS Grid examples</h1>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><i class="fa-brans fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brans fa-github"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="div-grid">
+            <div class="div-masonryI">Masonry I</div>
+            <div class="div-responsive">Responsive</div>
+            <div class="div-overlap">Overlap</div>
+            <div class="div-fluid">Fluid</div>
+            <div class="div-ExplicitlyPlaced">Explicitly Placed</div>
+            <div class="div-NegativeSpace">Negative Space</div>
+            <div class="div-FlexibleBreadth">Flexible Breadth</div>
+            <div class="div-MasonryII">Masonry II</div>
+            <div class="div-MansonryIII">Mansonry III</div>
+            <div class="div-DomOrder">DOM Order</div>
+            <div class="div-NamedTracks">Named Tracks</div>
+        </div>
+    </main>
+    <footer class="main">
+
+    </footer>
+</body>
+</html>
